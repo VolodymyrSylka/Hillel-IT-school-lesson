@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:3000/endpoint_unsaved/Untitled-1" method="get">
+        <fieldset style="margin-bottom: 8px;">
+            <legend>Личная информация</legend>
+
+            <label>Логин:</label>
+            <input type="text" name="Логин" id="Логин" minlength="2" maxlength="8">
+            <p></p>
+            <label>Адресс электроной почты:</label>
+            <input type="email" name="Адресс электроной почты" id="sergey123@gmail.com">
+            <p></p>
+            <label>Номер телефона:</label>
+            <input type="tel" name="Номер телефона" id="+3809632584" maxlength="11">
+            <p></p>
+            <label>Размер футболки:</label>
+            <select name="Размер">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+            </select>   
+
+        <fieldset style="margin-bottom: 8px;">
+        
+            <legend>Пол</legend>
+            <input type="radio" name="Мужчина" id="Мужчина" value="Мужчина">
+            <label>Мужчина</label>
+            <input type="radio" name="Женщина" id="Женщина" value="Женщина">
+            <label>Женщина</label>
+        </fieldset>
+        </fieldset> 
+
+        <fieldset style="margin-bottom: 8px;">
+            <legend>Предпочтения</legend>
+            <p>Язык(и) программирования:</p>
+            <input type="checkbox">Javascript<br>
+          <input type="checkbox">Python<br>
+          <input type="checkbox">C++<br>
+          <input type="checkbox">Java<br>
+        </fieldset>
+        <button>submit</button>
+    </form>
+</body>
+</html>
